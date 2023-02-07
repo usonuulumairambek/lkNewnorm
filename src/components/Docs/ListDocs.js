@@ -6,10 +6,10 @@ import ExcelIcon from "../../redux/uils/icons/excel.svg"
 
 export default function ListDocs(props) {
   const docsList = [
-    { name: "Шаблон 1", file: props.data.excel },
-    { name: "Шаблон 2", file: props.data.excel },
-    { name: "Шаблон 3", file: props.data.excel },
-    { name: "Шаблон 4", file: props.data.excel },
+    { name: "Шаблон", file: props.data.excel },
+    { name: "Шаблон", file: props.data.excel },
+    { name: "Шаблон", file: props.data.excel },
+    { name: "Шаблон ", file: props.data.excel },
   ]
   return (
     <div className="container">
@@ -20,7 +20,7 @@ export default function ListDocs(props) {
         {docsList.map((excel, id) => {
           return (
             <div key={id} className="card-file">
-              <div className="card-header">{excel.name}</div>
+              <div className="card-header">{excel.name} {id+1}</div>
               <CardMedia
                 className="icon-card"
                 type="file"

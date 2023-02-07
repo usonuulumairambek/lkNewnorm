@@ -7,7 +7,6 @@ import Box from '@material-ui/core/Box'
 import Button from '@material-ui/core/Button'
 import Card from '@material-ui/core/Card'
 import * as yup from 'yup'
-
 export default function ResetPassword() {
 	const dispatch = useDispatch()
 	const validationNewPAsswordSchema = yup.object().shape({

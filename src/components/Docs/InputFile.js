@@ -11,10 +11,11 @@ export default function InputFile(props) {
   const onSubmit = () => {
     dispatch(uploadExcelFile(file, props.category))
   }
-
+// console.log(file);
   const inputFileHandle = (e) => {
     setFile(e.target.files[0])
   }
+  debugger
   return (
     <div className="input-component-container">
       <TextField

@@ -1,5 +1,3 @@
-const point = "http://185.29.184.52:3000"
-
-export default point
-
-//http://185.29.184.52:3000
+const point = "http://cc14-185-117-151-122.ngrok.io";
+export default point;
+//http://212.112.108.208:3000

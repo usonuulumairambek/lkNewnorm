@@ -35,7 +35,6 @@ const App = () => {
     dispatch(getTemplateExcelFile())
     dispatch(getTemplateExcelFileVlad())
   }, [getDocsList, uploadExcelFile, uploadState])
-
   return (
     <BrowserRouter>
       <div className="app">
@@ -44,7 +43,6 @@ const App = () => {
           <Route path="/reset" component={ResetPassword} exact />
           <Route path="/newpassword" component={NewPassword} exact />
           <Route path="/auth/activate/:token" component={Activate} />
-
           {(loginSuccess || getSuccess) && (
             <Route path="/main" component={Sidebar} />
           )}
